@@ -9,7 +9,7 @@ public class NumFinder {
 
             if(n < smallest)
                 smallest = n;
-            else if (n > largest)
+            if (n > largest) //Eliminé el "else" que causaba el error del número negativo
                 largest = n;
 
         }
