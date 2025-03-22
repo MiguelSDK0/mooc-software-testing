@@ -31,19 +31,19 @@ public class ChocolateBagsBeforeBoundaryTest {
 
     @Test
     public void prueba1() {
-        int result = new ChocolateBags().calculate(2, 3, 18);
+        int result = new ChocolateBags().calculate(2, 3, 20);
         Assertions.assertEquals(-1, result);
     }
 
     @Test
     public void prueba2() {
-        int result = new ChocolateBags().calculate(3, 2, 12);
-        Assertions.assertEquals(2, result);
+        int result = new ChocolateBags().calculate(8, 2, 16);
+        Assertions.assertEquals(6, result);
     }
 
     @Test
     public void prueba3() {
         int result = new ChocolateBags().calculate(3, 1, 8);
-        Assertions.assertEquals(2, result);
+        Assertions.assertEquals(3, result);
     }
 }
