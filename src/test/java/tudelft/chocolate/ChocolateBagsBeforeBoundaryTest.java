@@ -43,7 +43,7 @@ public class ChocolateBagsBeforeBoundaryTest {
 
     @Test
     public void prueba3() {
-        int result = new ChocolateBags().calculate(2, 1, 7);
+        int result = new ChocolateBags().calculate(3, 1, 8);
         Assertions.assertEquals(2, result);
     }
 }
