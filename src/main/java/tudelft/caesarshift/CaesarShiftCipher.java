@@ -12,7 +12,7 @@ public class CaesarShiftCipher {
         for(int i = 0; i < length; i++){
             currentChar = message.charAt(i);
            
-            sb.append(currentChar);
+            //sb.append(currentChar); El error era que se agregaban los caracteres recibidos en la función, por eso al imprir aparecian las letras originales seguidas de las actualizadas
             if (currentChar > 'z' || currentChar < 'a') {
                 return "invalid";
             } else if ((char) (currentChar + shift) > 'z') {
