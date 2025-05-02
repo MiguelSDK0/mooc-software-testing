@@ -9,15 +9,13 @@ public class DiscountApplier {
     }
 
     public void setNewPrices() {
-
         for(Product product : dao.all()) {
-            if(product.getCategory().equals("BUSINESS")) {
+            if(product.getCategory().equals("HOME")) { // Error en la categoria, cambiado por HOME
                 product.setPrice(product.getPrice() * 0.9);
             }
-            if(product.getCategory().equals("HOME")) {
-                product.setPrice(product.getPrice() * 1.1);
+            if(product.getCategory().equals("BUSINESS")) {
+                product.setPrice(product.getPrice() * 1.1); // Error en la categoria, cambiado por BUSINESS
             }
         }
-
     }
 }
